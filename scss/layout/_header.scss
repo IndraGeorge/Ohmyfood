@@ -1,0 +1,40 @@
+/*header page d'accueil*/
+
+.header{
+
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+
+        .header__logo{
+            width:180px;
+            height:35px;
+                
+    }  
+
+}
+
+/*header menus*/
+
+.back-logo{
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+        .back-logo__arrow{
+
+            color:black;
+            font-size:20px;
+            padding-right:50px;
+            
+        }
+
+        >.back-logo__img{
+
+            width:180px;
+            height:35px;
+        }
+}

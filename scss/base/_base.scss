@@ -1,0 +1,26 @@
+
+$logo-title-font:"Shrikhand",Verdana;
+$text-font:"Roboto",sans-serif;
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family:$text-font;
+    margin-left:0;
+    margin-right:0;
+}
+
+h1,
+h2,
+h3,
+h4{
+
+    font-family:$logo-title-font;
+}
+
+a {
+    text-decoration:none;
+}

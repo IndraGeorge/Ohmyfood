@@ -1,3 +1,63 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Roboto", sans-serif;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Shrikhand", Verdana;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header page d'accueil*/
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header__logo {
+  width: 180px;
+  height: 35px;
+}
+
+/*header menus*/
+.back-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-logo .back-logo__arrow {
+  color: black;
+  font-size: 20px;
+  padding-right: 50px;
+}
+.back-logo > .back-logo__img {
+  width: 180px;
+  height: 35px;
+}
+
+.localisation {
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.localisation i {
+  padding-right: 15px;
+}
+.localisation i + p {
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=style.css.map */

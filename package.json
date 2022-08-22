@@ -4,12 +4,14 @@
   "description": "\"\",",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/main.scss:./public/style.css"
+    "sass": "sass --watch ./scss/main.scss:./public/style.css",
+    "prefix":"postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
   },
   "repository": {
     "type": "git",
     "url": "\"\","
   },
   "author": "Indra,",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }
