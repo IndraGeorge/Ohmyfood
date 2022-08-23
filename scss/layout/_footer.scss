@@ -1,0 +1,38 @@
+.footer-content {
+
+    width: 100%;
+    background: rgb(61, 60, 60);
+    padding:10px 0px 20px 0px;
+
+}
+
+
+.footer-content__logo {
+
+    font-size: 20px;
+    padding-left:40px;
+    font-family: $logo-title-font;
+    color: white;
+    font-weight: normal;
+}
+
+.footer-list {
+
+    list-style-type: none;
+    margin: 0;
+
+
+    &__link {
+
+        color: white;
+        display: flex;
+        align-items: center;
+        height: 30px;
+
+        >p {
+
+            padding-left: 10px;
+        }
+    }
+
+}

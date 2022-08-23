@@ -6,11 +6,12 @@
     display:flex;
     flex-direction:column;
     align-items:center;
+    margin-top:16px;
 
 
-        .header__logo{
-            width:180px;
-            height:35px;
+        &__logo{
+            width:160px;
+            height:32px;
                 
     }  
 
@@ -23,8 +24,9 @@
     display:flex;
     align-items:center;
     justify-content: center;
+    margin-top:16px;
 
-        .back-logo__arrow{
+        &__arrow{
 
             color:black;
             font-size:20px;
@@ -32,9 +34,9 @@
             
         }
 
-        >.back-logo__img{
+        &__img{
 
-            width:180px;
-            height:35px;
+            width:160px;
+            height:32px;
         }
 }
