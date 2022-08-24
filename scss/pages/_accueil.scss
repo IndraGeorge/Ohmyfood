@@ -1,93 +1,246 @@
+/*Section localisation*/
+
 .localisation {
 
-    background-color:#EFEFEF;
+    background-color: #EFEFEF;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:10px;
-    box-shadow: inset 0px 2px 3px rgb(192,192,192) ;
-    height:40px;
+    margin-top: 10px;
+    box-shadow: inset 0px 2px 3px rgb(192, 192, 192);
+    height: 40px;
 
 
-    >i {
-        padding-right: 15px;
-        color:#303030;
-        
-
-        +p {
-
-            font-weight: bold;
-            color:#303030;
-            font-size:16px;
-            
-        }
+    i {
+        padding-right: 10px;
+        color: #303030;
 
     }
 
 }
 
-.presentation{
+.search input {
 
-    text-align:center;
-    background-color:$color-background;
-    padding:15px 20px 30px 20px;
+    font-weight: bold;
+    color: #303030;
+    font-size: 16px;
+    border: none;
+    background-color: #EFEFEF;
+    text-align: center;
+    width: 150px;
 
-    &__title{
+}
 
-        margin:10%;
+/*Section présentation*/
+
+.presentation {
+
+    text-align: center;
+    background-color: $color-background;
+    padding: 15px 20px 30px 20px;
+
+    &__title {
+
+        margin: 10%;
     }
 
-    &__description{
+    &__description {
 
-        color:#5A5E6B;
-        margin:5%;
-        padding-bottom:20px;
+        color: #5A5E6B;
+        margin: 5%;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+    &__btn {
+
+        @include btn-pink;
+
+        &:hover {
+
+            box-shadow: 0px 2px 12px #5A5E6B;
+        }
+    }
+
+}
+
+/*Section fonctions*/
+
+.function {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h2 {
+
+        padding-left: 20px;
+        padding-bottom: 5px;
+    }
+
+}
+
+/*Boutons fonctions*/
+
+.function-btn {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-background;
+    border-radius: 20px;
+    margin: 16px;
+    padding: 6px;
+    box-shadow: 0px 5px 4px #D3D3D3;
+    padding-right: 18%;
+    padding-left: 8%;
+    max-width: 95%;
+    height: 60px;
+
+    &:hover {
+
+        @include hover-function;
+
+        i {
+            color: $color-primary;
+        }
+
+    }
+
+    >i {
+
+        margin-right: 7px;
+        color: grey;
+    }
+
+    &__number {
+
+        background-color: $color-primary;
+        color: white;
+        border-radius: 10px;
+        width: 20px;
+        height: 20px;
+        padding: 2px 8px 10px 6px;
+        font-size: 14px;
+        position: absolute;
+        left: 8px;
+    }
+
+    &__text {
+
+        font-weight: bold;
+        width: 178px;
+
+    }
+
+}
+
+/*section restaurants */
+
+.restaurants {
+
+    background-color: $color-background;
+    padding: 2px;
+
+    h2 {
+
+        padding-left: 20px;
+        padding-bottom: 5px;
+        padding-top: 30px;
+    }
+
+}
+
+/*Cards a*/
+
+.menus {
+
+    @include card-accueil;
+}
+
+/*images et nouveautés*/
+
+.menus-card {
+
+
+    margin: 0;
+
+    &__img {
+
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        max-height: 170px;
+
+    }
+
+    &__new {
+
+        @include new-dish;
+
+    }
+
+
+}
+
+/*descriptions des plats*/
+
+.menus-card__info {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menus-card__text {
+
+    margin-left: 10px;
+    padding-bottom: 15px;
+
+    &--name {
+
+        margin: 0;
+        padding-top: 10px;
         font-size:18px;
     }
 
-    &__btn{
+    &--dish {
 
-        background:linear-gradient($color-secondary,$color-primary);
-        color:white;
-        padding:14px;
-        border-radius:50px;
-        box-shadow:0px 2px 12px $color-gray;
-        display:block;
-        margin:10%;
+        margin: 0;
+        padding-top: 5px;
+    }
+
+}
+
+/*Animations coeurs*/
+
+.menus-card__heart {
+
+    margin-right: 10px;
+    font-size: 20px;
+
+    >i:nth-child(1){
+
+        position:absolute;
+        right:8%;
+    }
+
+    >i:nth-child(2){
+
+        position:absolute;
+        right:8%;
+        color:transparent;
 
         &:hover{
 
-            box-shadow:0px 2px 12px #5A5E6B;
+            background:linear-gradient($color-secondary, $color-primary); 
+            background-clip:text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
         }
     }
-           
-}
-
-.function{
-
-    padding-top:30px;
-    padding-bottom:30px;
-
-    >h2{
-
-        padding-left:20px;
-        padding-bottom:5px;  
-    }
-
-}
-
-.function-btn{
-
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    background-color:$color-background;
-    border-radius:20px;
-    margin:16px;
-    padding:6px;
-    box-shadow:0px 5px 4px #D3D3D3;
-
-
-    
 
 }
