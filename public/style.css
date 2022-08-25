@@ -55,11 +55,12 @@ a {
   font-family: "Shrikhand", Verdana;
   color: white;
   font-weight: normal;
+  margin-left: -18px;
 }
 
 .footer-list {
   list-style-type: none;
-  margin: 0;
+  margin-left: -18px;
 }
 .footer-list__link {
   color: white;
@@ -116,12 +117,14 @@ a {
   color: white;
   padding: 14px;
   border-radius: 50px;
-  box-shadow: 0px 2px 12px #D3D3D3;
+  box-shadow: 0px 1px 4px gray;
   display: block;
   margin: 10%;
+  transition-duration: 250ms;
 }
 .presentation__btn:hover {
-  box-shadow: 0px 2px 12px #5A5E6B;
+  box-shadow: 0px 3px 16px gray;
+  filter: brightness(1.05);
 }
 
 /*Section fonctions*/
@@ -148,6 +151,7 @@ a {
   padding-left: 8%;
   max-width: 95%;
   height: 60px;
+  transition-duration: 250ms;
 }
 .function-btn:hover {
   background-color: #f2eafb;
@@ -191,7 +195,7 @@ a {
   display: block;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 2px 15px #D3D3D3;
+  box-shadow: 0px 2px 12px gray;
   margin: 16px;
   position: relative;
 }
@@ -248,23 +252,72 @@ a {
 
 /*Animations coeurs*/
 .menus-card__heart {
-  margin-right: 10px;
-  font-size: 20px;
+  position: relative;
+  bottom: 40px;
+  font-size: 25px;
+  cursor: pointer;
 }
-.menus-card__heart > i:nth-child(1) {
+.menus-card__heart i:nth-child(1) {
   position: absolute;
   right: 8%;
+  bottom: 10%;
+  font-size: 25px;
+  z-index: 1;
 }
-.menus-card__heart > i:nth-child(2) {
+.menus-card__heart i:nth-child(2) {
   position: absolute;
   right: 8%;
-  color: transparent;
-}
-.menus-card__heart > i:nth-child(2):hover {
-  background: linear-gradient(#FF79DA, #9356DC);
+  bottom: 10%;
+  opacity: 0;
+  transition: opacity 1000ms ease-in-out;
+  background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: bold;
+  font-size: 25px;
+  z-index: 2;
+}
+.menus-card__heart i:nth-child(2):hover {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .media-queries {
+    display: flex;
+  }
+  .presentation {
+    background-color: white;
+    width: 50%;
+  }
+  .presentation__title {
+    font-size: 26px;
+  }
+  .function {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .function-btn__number {
+    position: relative;
+    left: -18%;
+  }
+  .menus-restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .menus {
+    width: 40%;
+  }
+  .menus-card__heart {
+    position: relative;
+    right: 10%;
+    top: -12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

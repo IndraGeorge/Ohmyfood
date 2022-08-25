@@ -55,10 +55,13 @@
     &__btn {
 
         @include btn-pink;
+        transition-duration: 250ms;
 
         &:hover {
 
-            box-shadow: 0px 2px 12px #5A5E6B;
+            box-shadow: 0px 3px 16px $color-hover;
+            filter: brightness(1.05);
+
         }
     }
 
@@ -95,10 +98,12 @@
     padding-left: 8%;
     max-width: 95%;
     height: 60px;
+    transition-duration: 250ms;
 
     &:hover {
 
         @include hover-function;
+
 
         i {
             color: $color-primary;
@@ -203,7 +208,7 @@
 
         margin: 0;
         padding-top: 10px;
-        font-size:18px;
+        font-size: 18px;
     }
 
     &--dish {
@@ -218,29 +223,106 @@
 
 .menus-card__heart {
 
-    margin-right: 10px;
-    font-size: 20px;
+    position: relative;
+    bottom: 40px;
+    font-size: 25px;
+    cursor: pointer;
 
-    >i:nth-child(1){
 
-        position:absolute;
-        right:8%;
+    i:nth-child(1) {
+
+        position: absolute;
+        right: 8%;
+        bottom: 10%;
+        font-size: 25px;
+        z-index: 1;
+
+
     }
 
-    >i:nth-child(2){
+    i:nth-child(2) {
 
-        position:absolute;
-        right:8%;
-        color:transparent;
+        position: absolute;
+        right: 8%;
+        bottom: 10%;
+        opacity: 0;
+        transition: opacity 1000ms ease-in-out;
+        background: linear-gradient($color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        font-size: 25px;
+        z-index: 2;
 
-        &:hover{
+        &:hover {
 
-            background:linear-gradient($color-secondary, $color-primary); 
-            background-clip:text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            
+            opacity: 1;
+
+        }
+
+
+    }
+}
+
+@media (min-width:768px) {
+
+
+    .media-queries{
+     
+        display: flex;
+        
+    }
+
+    .presentation{
+
+        background-color: white;
+        width:50%;
+
+        &__title{
+
+            font-size: 26px;
         }
     }
+
+    .function{
+
+        width:50%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .function-btn__number {
+
+        position: relative;
+        left: -18%;
+    }
+
+   
+    .menus-restaurants {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding:10px;
+
+    }
+
+    .menus {
+
+        width: 40%;
+    }
+
+    .menus-card__heart {
+
+        position: relative;
+        right: 10%;
+        top: -12px;
+    }
+
+
 
 }
