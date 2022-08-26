@@ -1,0 +1,59 @@
+
+.menus-img{
+
+    width:100%;
+    max-height:300px;
+    padding-top:10px;
+    object-fit: cover;
+    background-position: center;
+    position:relative;
+    display:block;
+    overflow: hidden;
+    
+    
+}
+
+.menus-page{
+
+    background-color:$color-background;
+    border-radius: 40px 40px 0px 0px;
+    position:relative;
+    z-index:1;
+    margin-top:-33px;
+    padding:30px 10px;
+    
+    .name{
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:-32px;
+
+        >h1{
+
+            
+            font-size: 25px;
+        }
+
+
+        >i{
+
+            font-size: 25px;
+        }
+    }
+    
+}
+
+.bloc-dish{
+
+    display:flex;
+    flex-direction: column;
+
+    &__item{
+
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+

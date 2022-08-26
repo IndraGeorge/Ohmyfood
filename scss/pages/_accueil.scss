@@ -255,7 +255,8 @@
         font-size: 25px;
         z-index: 2;
 
-        &:hover {
+        &:hover,
+        &:active {
 
             opacity: 1;
 
@@ -265,10 +266,10 @@
     }
 }
 
-@media (min-width:768px) {
+@media screen and (min-width:$breakpoints-tablet) {
 
 
-    .media-queries{
+    .media-query{
      
         display: flex;
         
@@ -323,6 +324,22 @@
         top: -12px;
     }
 
+}
+
+@media screen and (min-width:$breakpoints-desktop){
+
+    body{
+
+        max-width:1024px;
+        margin:auto;
+        
+    }
+        
+    .function-btn__number{
+
+        position:relative;
+        left:-20%;
+    }
 
 
 }
