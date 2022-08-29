@@ -14,15 +14,25 @@
     z-index:2;
     top:0;
     left:0;
-   
-    
+
+
+     p{
+
+        font-size:45px;
+        position:absolute;
+        top:0;
+        animation:logo-anim 0s ease-in 3s forwards;
+        
+    }
+      
+
 }
 
 .loader {
 
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 7px solid transparent;
     animation: spin 2s linear infinite; 
@@ -84,4 +94,20 @@
         height:0;
         
     }
+}
+
+@keyframes logo-anim {
+
+    0%{
+
+        transform: opacity(0);
+        
+    }
+
+    100%{
+
+        transform:opacity(1);
+        
+    }
+
 }

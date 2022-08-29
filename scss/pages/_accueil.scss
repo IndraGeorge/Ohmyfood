@@ -155,14 +155,14 @@
 
 }
 
-/*Cards a*/
+//*Cards a
 
 .menus {
 
     @include card-accueil;
 }
 
-/*images et nouveautés*/
+//*images et nouveautés
 
 .menus-card {
 
@@ -234,7 +234,7 @@
         position: absolute;
         right: 8%;
         bottom: 10%;
-        font-size: 25px;
+        font-size: 30px;
         z-index: 1;
 
 
@@ -252,7 +252,7 @@
         -webkit-background-clip: text;
         color: transparent;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 30px;
         z-index: 2;
 
         &:hover,
@@ -269,27 +269,27 @@
 @media screen and (min-width:$breakpoints-tablet) {
 
 
-    .media-query{
-     
+    .media-query {
+
         display: flex;
-        
+
     }
 
-    .presentation{
+    .presentation {
 
         background-color: white;
-        width:50%;
+        width: 50%;
 
-        &__title{
+        &__title {
 
             font-size: 26px;
         }
     }
 
-    .function{
+    .function {
 
-        width:50%;
-        display:flex;
+        width: 50%;
+        display: flex;
         flex-direction: column;
         justify-content: center;
 
@@ -301,14 +301,14 @@
         left: -18%;
     }
 
-   
+
     .menus-restaurants {
 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding:10px;
+        padding: 10px;
 
     }
 
@@ -326,19 +326,24 @@
 
 }
 
-@media screen and (min-width:$breakpoints-desktop){
+@media screen and (min-width:$breakpoints-desktop) {
 
-    body{
+    body {
 
-        max-width:1024px;
-        margin:auto;
-        
+        max-width: 1400px;
+        margin: auto;
+
     }
-        
-    .function-btn__number{
 
-        position:relative;
-        left:-20%;
+    
+    .function-btn{
+
+        &__number {
+
+            position: relative;
+            left: -22%;           
+        }
+    
     }
 
 
