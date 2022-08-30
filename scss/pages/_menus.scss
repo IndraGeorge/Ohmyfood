@@ -1,3 +1,5 @@
+//*Image 
+
 .menus-img {
 
     width: 100%;
@@ -8,10 +10,9 @@
     position: relative;
     z-index: -1;
 
-
 }
 
-//*section menus-page 
+//*Section menus-page 
 
 .menus-page {
 
@@ -21,6 +22,8 @@
     z-index: 1;
     margin-top: -33px;
     padding: 30px 10px;
+
+    //*Titre
 
     .name {
 
@@ -65,6 +68,8 @@
 
 }
 
+//*Menus entrées, plats, desserts.
+
 .bloc-dish {
 
     display: flex;
@@ -94,7 +99,7 @@
         }
        
              
-     //*hover desktop
+     //*Hover desktop
 
         &:hover
         .bloc-dish__check {
@@ -113,7 +118,7 @@
             margin-right: 60px;
         }
 
-     //*hover mobile
+     //*Hover mobile
 
         &:active
         .bloc-dish__check {
@@ -192,6 +197,8 @@
 
 }
 
+//*Bouton commander
+
 .btn__order {
 
     @include btn-pink;
@@ -207,7 +214,7 @@
     }
 }
 
-//*animations
+//*Animations
 
 @keyframes appear {
 
@@ -244,7 +251,7 @@
 
 
 
-//*breakpoints 
+//*Breakpoints 
 
 @media screen and (min-width:$breakpoints-tablet){
 
@@ -258,11 +265,24 @@
 
 @media screen and (min-width:$breakpoints-desktop){
   
-    .menus-img{
+   .menus-category{
 
-        max-height:560px;
+    display:flex;
+    justify-content: space-between;
+   }
+
+   .bloc-dish{
+
+    width:30%;
+
+   }
+    
+
+
+    .btn__order{
+
+        font-size:20px;
     }
-
        
 }
 
