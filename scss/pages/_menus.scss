@@ -101,42 +101,42 @@
              
      //*Hover desktop
 
-        &:hover
-        .bloc-dish__check {
+     &:hover
+     .bloc-dish__check {
 
-            margin-right: 0;
+         margin-right: 0;
 
-           i{
-                animation:rotate-icon 1s;
-           }
-
+        i{
+             animation:rotate-icon 1s;
         }
 
-        &:hover
-        .bloc-dish__price {
+     }
 
-            margin-right: 60px;
-        }
+     &:hover
+     .bloc-dish__price {
+
+         margin-right:60px;
+     }
 
      //*Hover mobile
 
-        &:active
-        .bloc-dish__check {
+     &:active
+     .bloc-dish__check {
 
-            margin-right: 0;
+         margin-right: 0;
 
-            i{
-                animation:rotate-icon 1s;
-           }
-
+         i{
+             animation:rotate-icon 1s;
         }
 
-        &:active 
-        .bloc-dish__price{
+     }
 
-            margin-right:60px;
+     &:active
+     .bloc-dish__price{
 
-        }
+         margin-right:60px;
+
+     }
 
     }
 
