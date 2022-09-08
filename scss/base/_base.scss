@@ -1,4 +1,6 @@
 
+//*text font 
+
 $logo-title-font:"Shrikhand",Verdana;
 $text-font:"Roboto",sans-serif;
 
@@ -13,11 +15,14 @@ body{
     margin:0;
 }
 
+//*title font
+
 .name > h1{
 
     font-family:$logo-title-font;
 }
 
+//* style links
 
 a {
     text-decoration:none;

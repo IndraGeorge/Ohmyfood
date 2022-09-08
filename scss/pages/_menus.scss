@@ -1,4 +1,4 @@
-//*Image 
+//*picture
 
 .menus-img {
 
@@ -12,7 +12,7 @@
 
 }
 
-//*Section menus-page 
+//*menus-page section
 
 .menus-page {
 
@@ -23,7 +23,7 @@
     margin-top: -33px;
     padding: 30px 10px;
 
-    //*Titre
+    //*title
 
     .name {
 
@@ -68,7 +68,7 @@
 
 }
 
-//*Menus entrées, plats, desserts.
+//*menus entree, dish, desserts.
 
 .bloc-dish {
 
@@ -99,7 +99,7 @@
         }
        
              
-     //*Hover desktop
+     //*hover desktop
 
      &:hover
      .bloc-dish__check {
@@ -118,7 +118,8 @@
          margin-right:60px;
      }
 
-     //*Hover mobile
+
+     //*hover mobile
 
      &:active
      .bloc-dish__check {
@@ -197,7 +198,7 @@
 
 }
 
-//*Bouton commander
+//*order button
 
 .btn__order {
 
@@ -214,7 +215,7 @@
     }
 }
 
-//*Animations
+//*animation
 
 @keyframes appear {
 
@@ -249,9 +250,7 @@
 }
 
 
-
-
-//*Breakpoints 
+//*breakpoints 
 
 @media screen and (min-width:$breakpoints-tablet){
 

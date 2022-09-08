@@ -16,7 +16,6 @@ a {
   color: black;
 }
 
-/*header page d'accueil*/
 .header {
   width: 100%;
   display: flex;
@@ -29,7 +28,6 @@ a {
   height: 32px;
 }
 
-/*header menus*/
 .back-logo {
   display: flex;
   align-items: center;
@@ -73,8 +71,12 @@ a {
   align-items: center;
   height: 30px;
 }
-.footer-list__link > p {
+.footer-list__link p {
   padding-left: 10px;
+}
+.footer-list .proposal {
+  padding-left: 0;
+  padding-left: 16px;
 }
 
 .localisation {
@@ -178,11 +180,13 @@ a {
 .function-btn__text {
   font-weight: bold;
   width: 178px;
+  white-space: nowrap;
 }
 
 .restaurants {
   background-color: #F5F5F5;
   padding: 2px;
+  padding-bottom: 30px;
 }
 .restaurants h2 {
   padding-left: 20px;

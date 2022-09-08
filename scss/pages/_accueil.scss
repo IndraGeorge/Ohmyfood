@@ -1,4 +1,4 @@
-//*Section localisation
+//* localisation section
 
 .localisation {
 
@@ -30,7 +30,7 @@
 
 }
 
-//*Section présentation
+//* presentation section
 
 .presentation {
 
@@ -51,6 +51,8 @@
         font-size: 18px;
     }
 
+    //*explore button
+    
     &__btn {
 
         @include btn-pink;
@@ -66,7 +68,7 @@
 
 }
 
-//*Section fonctions
+//* function section
 
 .function {
 
@@ -81,7 +83,7 @@
 
 }
 
-//*Boutons fonctions
+//*function button
 
 .function-btn {
 
@@ -133,17 +135,19 @@
 
         font-weight: bold;
         width: 178px;
+        white-space:nowrap;
 
     }
 
 }
 
-//*section restaurants 
+//*restaurant section
 
 .restaurants {
 
     background-color: $color-background;
     padding: 2px;
+    padding-bottom:30px;
 
     h2 {
 
@@ -154,7 +158,7 @@
 
 }
 
-//*Cards a
+//*cards 
 
 .menus {
 
@@ -162,7 +166,7 @@
   
 }
 
-//*Images et Nouveautés
+//*pictures and news
 
 .menus-card {
 
@@ -188,7 +192,7 @@
 
 }
 
-//*Descriptions des plats
+//*description of dishes
 
 .menus-card__info {
 
@@ -218,7 +222,7 @@
 
 }
 
-//*Animations coeurs
+//* animated heart
 
 .menus-card__heart {
 
@@ -263,7 +267,7 @@
     }
 }
 
-//*Breakpoints
+//*breakpoints
 
 @media screen and (min-width:$breakpoints-tablet) {
 
@@ -324,6 +328,8 @@
     }
 
 }
+
+
 
 @media screen and (min-width:$breakpoints-desktop) {
 
